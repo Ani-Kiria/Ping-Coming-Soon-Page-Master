@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+form {
+  display: flex;
+}
+.ping-logo {
+  margin: 80px 311px 40px;
+}
+.text1 {
+  font-family: LibreFranklin, Arial, Helvetica, sans-serif;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 1.25;
+  text-align: center;
+  color: #969696;
+}
+.text2 {
+  font-weight: bold;
+  color: #15202a;
+}
+.text3 {
+  margin: 16px 235px 40px;
+  font-family: LibreFranklin, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  color: #15202a;
+}
+#email {
+  width: 421px;
+  height: 56px;
+  margin: 0 16px 0 0;
+  padding: 18px 240px 18px 30px;
+  border-radius: 28px;
+  box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0);
+  border: solid 1px #c2d3ff;
+  background-color: #fff;
+}
+.button-container {
+  width: 200px;
+  height: 56px;
+  padding: 19px 62px 18px 63px;
+  border-radius: 28px;
+  box-shadow: 0 5px 10px 2px rgba(76, 123, 243, 0.23);
+  background-color: #4c7bf3;
+}
+button {
+  all: unset;
+  font-family: LibreFranklin, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+.dashboard {
+  width: 644.8px;
+  margin: 94px 31.2px 51.5px 36px;
+}
+.icon-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.facebook-icon:hover path {
+  fill: #4c7bf3;
+}
+.twitter-icon {
+  margin: 0 10px 0 12px;
+}
+.twitter-icon:hover path {
+  fill: #4c7bf3;
+}
+.instagram-icon {
+  margin: 3px 0 0 0px;
+}
+.instagram-icon:hover path {
+  fill: #4c7bf3;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  margin: 25px 1px 0 0;
+  font-family: LibreFranklin, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  color: #969696;
+}
