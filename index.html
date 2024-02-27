@@ -22,6 +22,7 @@
         <div class="button-container">
           <button type="submit" id="button">Notify Me</button>
         </div>
+        <div class="message-container"></div>
       </form>
       <img
         src="./images/illustration-dashboard.png"
@@ -63,4 +64,20 @@
       </footer>
     </div>
   </body>
+  <!-- JS code -->
+  <script>
+    const userInput = document.getElementById("email");
+    const element = document.getElementById("button");
+    const container = document.getElementsByClassName("message-container")[0];
+    element.addEventListener("click", function () {
+      const validCharacters = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+      const message = document.createElement("p");
+      message.textContent = "Please provide a valid email address";
+      if (validCharacters.test(userInput.value)) {
+        return true;
+      } else {
+        container.appendChild(message);
+      }
+    });
+  </script>
 </html>
