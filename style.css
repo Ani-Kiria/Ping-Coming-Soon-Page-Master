@@ -98,3 +98,13 @@ footer {
   font-weight: 300;
   color: #969696;
 }
+#error-message {
+  display: none;
+  padding: 6px 0 0 30px;
+  font-family: LibreFranklin, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 1.67;
+  letter-spacing: 0.15px;
+  color: #ff5466;
+}
