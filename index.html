@@ -18,11 +18,11 @@
       <p class="text1">We are launching <span class="text2">soon!</span></p>
       <p class="text3">Subscribe and get notified</p>
       <form>
-        <input type="email" id="email" placeholder="Your email address..." />
-        <div class="button-container">
-          <button type="submit" id="button">Notify Me</button>
+        <div>
+          <input type="text" id="email" placeholder="Your email address..." />
+          <p id="error-message">Please provide a valid email address</p>
         </div>
-        <div class="message-container"></div>
+        <button type="submit" id="button">Notify Me</button>
       </form>
       <img
         src="./images/illustration-dashboard.png"
@@ -59,24 +59,23 @@
             </svg>
           </a>
         </div>
-
         <p class="copyright">© Copyright Ping. All rights reserved.</p>
       </footer>
     </div>
   </body>
+
   <!-- JS code -->
   <script>
     const userInput = document.getElementById("email");
     const element = document.getElementById("button");
-    const container = document.getElementsByClassName("message-container")[0];
-    element.addEventListener("click", function () {
+    element.addEventListener("click", function (event) {
+      event.preventDefault();
       const validCharacters = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-      const message = document.createElement("p");
-      message.textContent = "Please provide a valid email address";
+      const errorMessage = document.getElementById("error-message");
       if (validCharacters.test(userInput.value)) {
         return true;
       } else {
-        container.appendChild(message);
+        errorMessage.style.display = "block";
       }
     });
   </script>

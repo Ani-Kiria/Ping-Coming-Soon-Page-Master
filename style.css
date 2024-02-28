@@ -11,6 +11,7 @@ body {
 }
 form {
   display: flex;
+  align-items: flex-start;
 }
 .ping-logo {
   margin: 80px 311px 40px;
@@ -45,15 +46,7 @@ form {
   border: solid 1px #c2d3ff;
   background-color: #fff;
 }
-.button-container {
-  width: 200px;
-  height: 56px;
-  padding: 19px 62px 18px 63px;
-  border-radius: 28px;
-  box-shadow: 0 5px 10px 2px rgba(76, 123, 243, 0.23);
-  background-color: #4c7bf3;
-}
-button {
+#button {
   all: unset;
   font-family: LibreFranklin, Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -61,6 +54,11 @@ button {
   text-align: center;
   color: #fff;
   cursor: pointer;
+  width: 200px;
+  padding: 19px 62px 18px 63px;
+  border-radius: 28px;
+  box-shadow: 0 5px 10px 2px rgba(76, 123, 243, 0.23);
+  background-color: #4c7bf3;
 }
 .dashboard {
   width: 644.8px;
