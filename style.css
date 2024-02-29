@@ -4,33 +4,33 @@
   box-sizing: border-box;
 }
 body {
+  font-family: LibreFranklin, Arial, Helvetica, sans-serif;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding: 75px 0 20px;
 }
 form {
   display: flex;
   align-items: flex-start;
-}
-.ping-logo {
-  margin: 80px 311px 40px;
+  margin-top: 30px;
 }
 .text1 {
-  font-family: LibreFranklin, Arial, Helvetica, sans-serif;
   font-size: 48px;
   font-weight: 300;
   line-height: 1.25;
   text-align: center;
   color: #969696;
+  margin-top: 25px;
 }
 .text2 {
   font-weight: bold;
   color: #15202a;
 }
 .text3 {
-  margin: 16px 235px 40px;
-  font-family: LibreFranklin, Arial, Helvetica, sans-serif;
+  margin-top: 16px;
   font-size: 20px;
   font-weight: 300;
   text-align: center;
@@ -48,7 +48,7 @@ form {
 }
 #button {
   all: unset;
-  font-family: LibreFranklin, Arial, Helvetica, sans-serif;
+  font-family: inherit;
   font-size: 16px;
   font-weight: 600;
   text-align: center;
@@ -62,7 +62,7 @@ form {
 }
 .dashboard {
   width: 644.8px;
-  margin: 94px 31.2px 51.5px 36px;
+  margin: 40px 0 10px;
 }
 .icon-group {
   display: flex;
@@ -90,10 +90,8 @@ footer {
   justify-content: center;
   align-items: center;
 }
-
 .copyright {
   margin: 25px 1px 0 0;
-  font-family: LibreFranklin, Arial, Helvetica, sans-serif;
   font-size: 12px;
   font-weight: 300;
   color: #969696;
@@ -101,7 +99,6 @@ footer {
 #error-message {
   display: none;
   padding: 6px 0 0 30px;
-  font-family: LibreFranklin, Arial, Helvetica, sans-serif;
   font-size: 12px;
   font-style: italic;
   line-height: 1.67;
